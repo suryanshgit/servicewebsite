@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Supporting files/fontawesome.css">
+    <link rel="stylesheet" href="Supporting files/bootstrap5.css">
+    <link rel="stylesheet" href="Supporting files/all.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- for owlcarosuel -->
+    <link rel="stylesheet" href="Supporting files/owl.carousel.css">
+    <link rel="stylesheet"
+        href="Supporting files/owl.theme.green.css">
+
+    <!-- for owlcarousel -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Service Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .adiv {
+            background-image: linear-gradient(rgba(25, 196, 202, 0.836), rgba(25, 196, 202, 0.836)), url("F:/Web Notes and Projects/Visual studio codes/Images/programmerTable.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            clip-path: polygon(100% 0, 100% 72%, 50% 100%, 0 76%, 0 0);
+            /* border:3px solid red; */
+        }
+
+        .space {
+            height: 10px;
+        }
+
+        .btn-1 {
+            transition: all 0.1s linear;
+        }
+
+        .btn-1:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 15px 0px black;
+            /* transform:translate(-20px,-20px); */
+            transform: scale(1.2, 1.2)
+        }
+
+        .priceDiv {
+            height: 80vh;
+            border: 100vw;
+            position: relative;
+            /* background:skyblue; */
+            /* background-image: linear-gradient(#2196f3, #2196f3);
+            clip-path: polygon(0 0, 100% 0, 100% 39%, 0% 100%);
+            z-index: -1; */
+        }
+
+        .priceDiv::before {
+            content:"";
+            width:100%;
+            display:block;
+            height: 85vh;
+            border: 100vw;
+            position: absolute;
+            background-image: linear-gradient(#2196f3, #2196f3);
+            clip-path: polygon(0 0, 100% 0, 100% 39%, 0% 100%);
+            z-index:-1;
+           
+        }
+
+        .formDiv {
+            position:relative;
+        }
+
+        .formDiv::before{
+            content:"Hello World";
+            position:absolute;
+            top:20px;
+            width:100%;
+            height:70vh;
+            background-image: linear-gradient(#2196f3, #2196f3);
+            clip-path: polygon(88% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        .item {
+
+            height: 340px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body class="one">
+
+    <!-- ****************************************Creating scroll up icon start********************************************** -->
+    <i class=" fas fa-arrow-circle-up text-white bg-primary arrowTop " style="z-index:4;margin-top:550px;margin-left:96vw;position:fixed ;width:25px;height:25px;display:none;justify-content:center;align-items:center;"></i>
+    <!-- ****************************************Creating scroll up icon end********************************************** -->
+    
+    <div class="adiv" style="">
+        <!-- ******************************navbar starts******************** -->
+        <div class="space"></div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-info  ">
+
+            <a href="" class="navbar-brand ml-5  " style="font-size:25px;">TIWARYS</a>
+            <ul class="navbar-nav font-weight-bold ml-auto mr-5" style="color:white;">
+                <li class="nav-item"><a href="" class="nav-link mr-4 " style="color:white;">HOME</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link mr-4" style="color:white;">SERVICES</a></li>
+                <li class="nav-item"><a href="#price" class="nav-link mr-4" style="color:white;">PRICE</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link mr-4" style="color:white;">ABOUT</a></li>
+                <li class="nav-item"><a href="#contact"  class="nav-link mr-4" style="color:white;">CONTACT</a></li>
+            </ul>
+
+        </nav>
+        <!-- ************************navbar ends****************************** -->
+
+        <div class="row  " style="color:white;font-family: 'Roboto', sans-serif;margin-top:120px;padding:110px;">
+            <div class="col-sm-12 text-center" style="">
+                <h2 style="font-size:40px;">We are The Web Developers</h2>
+            </div>
+            <div class="col-sm-12 text-center mt-3" style="">
+                <h5>We create the world best websites.</h4>
+            </div>
+            <div class="col-sm-12 text-center mt-3" style="">
+                <button class="btn btn-1"
+                    style="border-radius:100px;border-color:white;width:100px;margin-right:40px;"><a href="#about">About Us</a></button>
+                <button class="btn btn-1" style="border-radius:100px;border-color:white;width:100px;"><a href="#contact">Contact</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ************************************header ends************************************ -->
+    <!-- *******************************cards******************************************* -->
+    <div class="row " style="display:flex;justify-content:space-around;border:none;">
+        <div class="col-sm-8 col-md-5 col-lg-3 text-center mx-2 mt-3 px-2 py-4 card " style="border:none;">
+            <i class="fas fa-desktop  " style="color:#00e5ff;font-size:30px;"></i>
+            <h6 class="text-uppercase font-weight-bold mt-3">Easy to use</h6><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At libero eum quia, harum ullam nemo quasi sed
+                provident itaque quidem, nisi voluptatem aspernatur? Placeat tempore molestias illum quidem quam labore.
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 text-center mt-3 px-2 py-4 card" style="border:none;">
+            <i class="fas fa-trophy  " style="color:#00e5ff;font-size:30px;"></i>
+            <h6 class="text-uppercase font-weight-bold mt-3">Easy to use</h6><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At libero eum quia, harum ullam nemo quasi sed
+                provident itaque quidem, nisi voluptatem aspernatur? Placeat tempore molestias illum quidem quam labore.
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 text-center mx-2 mt-3 px-2 py-4 card" style="border:none;">
+            <i class="fas fa-magic  " style="color:#00e5ff;font-size:30px;"></i>
+            <h6 class="text-uppercase font-weight-bold mt-3">Easy to use</h6><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At libero eum quia, harum ullam nemo quasi sed
+                provident itaque quidem, nisi voluptatem aspernatur? Placeat tempore molestias illum quidem quam labore.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- ********************************What do we offer starts**************************************** -->
+    <div class=" mt-4" id="services"></div>
+    <h2 class="text-uppercase font-weight-bold text-center">What do we offer</h2>
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <div class="row  container " style="margin-left:100px;background-color:rgba(128, 128, 128, 0.09);">
+
+        <div class="col-sm-4 mr-5 ">
+            <p class="text-uppercase">html</p>
+            <!-- <div class="border row text-center" style="height:20px;border-radius:20px;line-height:15px;"> -->
+            <!-- <div class="col-sm-12 text-center offer1" style="border-radius:20px;">100%</div> -->
+            <div class="progress">
+                <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+            </div>
+            <!-- <div class="col-sm-3"></div> -->
+            <!-- </div> -->
+            <p class="text-uppercase">css</p>
+            <!-- <div class="border row text-center" style="height:20px;border-radius:20px;line-height:15px;">
+                <div class="col-sm-11 text-center bg-warning" style="border-radius:20px 0 0 20px;">90%</div>
+                <div class="col-sm-1"></div>
+            </div> -->
+            <div class="progress">
+                <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
+            </div>
+
+            <p class="text-uppercase">Javascript</p>
+            <!-- <div class="border row text-center" style="height:20px;border-radius:20px;line-height:15px;">
+                <div class="col-sm-9 text-center bg-dark" style="border-radius:20px 0 0 20px;">80%</div>
+                <div class="col-sm-3"></div>
+            </div> -->
+            <div class="progress">
+                <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+            </div>
+            <p class="text-uppercase">ReactJS</p>
+            <!-- <div class="border row text-center" style="height:20px;border-radius:20px;line-height:15px;">
+                <div class="col-sm-8 text-center bg-info" style="border-radius:20px 0 0 20px;">70%</div>
+                <div class="col-sm-4"></div>
+            </div> -->
+            <div class="progress">
+                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+            </div>
+
+            <p class="text-uppercase">nodejs</p>
+            <!-- <div class="border row text-center" style="height:20px;border-radius:20px;line-height:15px;">
+                <div class="col-sm-7 text-center bg-secondary" style="border-radius:20px 0 0 20px;">60%</div>
+                <div class="col-sm-5"></div>
+            </div> -->
+            <div class="progress">
+                <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-3"><i class="fas fa-desktop mt-4 ml-2" style="font-size:60px;color:cyan;"></i></div>
+                <div class="col-sm-9">
+                    <h6>Website Development</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat facilis aspernatur beatae
+                        expedita, vel nesciunt, </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3"><i class="fas fa-wifi mt-4 ml-2" style="font-size:60px;color:cyan;"></i></div>
+                <div class="col-sm-9">
+                    <h6>Digital Marketing</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat facilis aspernatur beatae
+                        expedita, vel nesciunt, </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3"><i class="fas fa-phone mt-4 ml-2" style="font-size:60px;color:cyan;"></i></div>
+                <div class="col-sm-9">
+                    <h6>Support 24/7</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat facilis aspernatur beatae
+                        expedita, vel nesciunt, </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ********************************what do we offer ends****************************** -->
+    <!-- **************************************************Our stats********************************* -->
+    <h5 class="text-uppercase text-center " style="margin-top:120px;">more than 2,000 websites created</h5>
+    <div class="container row mt-5" style="height:200px;display:flex;justify-content:space-around;margin-left:120px;" >
+
+
+        <div class="col-sm-2">
+            <h1 class="counter">1095</h1>
+            <p>CMS Installation</p>
+        </div>
+        <div class="col-sm-2">
+            <h1 class="counter">1816</h1>
+            <p>Awards Won</p>
+        </div>
+        <div class="col-sm-2">
+            <h1 class="counter">508</h1>
+            <p>Happy clients</p>
+        </div>
+        <div class="col-sm-2">
+            <h1 class="counter">363</h1>
+            <p>Working On</p>
+        </div>
+
+    </div>
+    <!-- ********************************************Our stats end here********************************* -->
+    <!-- *************************************************Our best Pricing starts here************************* -->
+    <div class="priceDiv" id="price">
+        <div class="mt-4 priceDiv1" style="height:40px;"></div>
+        <h3 class="text-uppercase text-center mb-4" style="color:white;">our best pricing</h3>
+        <div class="row  container "
+            style="display:flex;justify-content:space-around;margin-left:100px;position:absolute;">
+            <div class="col-sm-3 border hoverCard  " style="width:100px; height:340px;background-color:white;">
+                <h2 class="text-center" style="">Basic</h2>
+                <div class="border" style="width:275px;margin-left:-15px;"></div>
+                <p class="px-5 py-4">
+                    $ <span style="font-size:20px;">20</span>/Website Responsive Websites Domain Name Free
+                    Mobile
+                    Friendly Webmail Support Customer Support 24/7
+                </p>
+                <div class="border" style="width:275px;margin-left:-15px;"></div>
+                <button class="text-uppercase btn text-center"
+                    style="border-radius:20px;margin-left:70px;margin-top:6px;border-color:#00e676;color:#00e676;">purchase</button>
+            </div>
+
+            <div class="col-sm-3 border  " style="width:100px; height:340px;background-color:white;">
+                <h2 class="text-center" style="">Basic</h2>
+                <div class="border" style="width:275px;margin-left:-15px;"></div>
+                <p class="px-5 py-4">
+                    $ <span style="font-size:20px;">20</span>/Website Responsive Websites Domain Name Free
+                    Mobile
+                    Friendly Webmail Support Customer Support 24/7
+                </p>
+                <div class="border" style="width:275px;margin-left:-15px;"></div>
+                <button class="text-uppercase btn text-center"
+                    style="border-radius:20px;margin-left:70px;margin-top:6px;border-color:#00e676;color:#00e676;">purchase</button>
+            </div>
+
+            <div class="col-sm-3 border  " style="width:100px; height:340px;background-color:white;">
+                <h2 class="text-center" style="">Basic</h2>
+                <div class="border" style="width:275px;margin-left:-15px;"></div>
+                <p class="px-5 py-4">
+                    $ <span style="font-size:20px;">20</span>/Website Responsive Websites Domain Name Free
+                    Mobile
+                    Friendly Webmail Support Customer Support 24/7
+                </p>
+                <div class="border" style="width:275px;margin-left:-15px;"></div>
+                <button class="text-uppercase btn text-center"
+                    style="border-radius:20px;margin-left:70px;margin-top:6px;border-color:#00e676;color:#00e676;">purchase</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- *************************************************Our best Pricing ends here************************* -->
+    <!-- ******************************************************Our happy Clients starts here ********************************* -->
+    <h3 class="text-uppercase font-weight-bold text-center" id="about">Our happy clients</h3>
+    <h6 class="text-capitalize text-secondary mt-2 text-center">Our satisfied customers says</h6>
+    <div class="container " >
+        <div class="owl-carousel owl-theme">
+            <div class="item shadow">
+                <img src="Images\hande ercel.jpg" alt="actress image"
+                    class="ml-4 rounded-circle" style="width:250px;height:150px;">
+                <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam maxime animi
+                    accusantium in aspernatur nobis.</p>
+                <h6 class="text-center">Suryansh Tiwary</h6>
+                <p class="text-center text-capitalize text-secondary">web developer</p>
+            </div>
+            <div class="item shadow">
+                <img src="Images\hande ercel.jpg" alt="actress image"
+                    class="ml-4 rounded-circle" style="width:250px;height:150px;">
+                <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam maxime animi
+                    accusantium in aspernatur nobis.</p>
+                <h6 class="text-center">Suryansh Tiwary</h6>
+                <p class="text-center text-capitalize text-secondary">web developer</p>
+            </div>
+            <div class="item shadow">
+                <img src="Images\hande ercel.jpg" alt="actress image"
+                    class="ml-4 rounded-circle" style="width:250px;height:150px;">
+                <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam maxime animi
+                    accusantium in aspernatur nobis.</p>
+                <h6 class="text-center">Suryansh Tiwary</h6>
+                <p class="text-center text-capitalize text-secondary">web developer</p>
+            </div>
+            <div class="item shadow">
+                <img src="Images\hande ercel.jpg" alt="actress image"
+                    class="ml-4 rounded-circle" style="width:250px;height:150px;">
+                <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam maxime animi
+                    accusantium in aspernatur nobis.</p>
+                <h6 class="text-center">Suryansh Tiwary</h6>
+                <p class="text-center text-capitalize text-secondary">web developer</p>
+            </div>
+            <div class="item shadow">
+                <img src="Images\hande ercel.jpg" alt="actress image"
+                    class="ml-4 rounded-circle" style="width:250px;height:150px;">
+                <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam maxime animi
+                    accusantium in aspernatur nobis.</p>
+                <h6 class="text-center">Suryansh Tiwary</h6>
+                <p class="text-center text-capitalize text-secondary">web developer</p>
+            </div>
+            <div class="item shadow">
+                <img src="Images\hande ercel.jpg" alt="actress image"
+                    class="ml-4 rounded-circle" style="width:250px;height:150px;">
+                <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam maxime animi
+                    accusantium in aspernatur nobis.</p>
+                <h6 class="text-center">Suryansh Tiwary</h6>
+                <p class="text-center text-capitalize text-secondary">web developer</p>
+            </div>
+            <div class="item shadow">
+                <img src="Images\hande ercel.jpg" alt="actress image"
+                    class="ml-4 rounded-circle" style="width:250px;height:150px;">
+                <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam maxime animi
+                    accusantium in aspernatur nobis.</p>
+                <h6 class="text-center">Suryansh Tiwary</h6>
+                <p class="text-center text-capitalize text-secondary">web developer</p>
+            </div>
+            <div class="item shadow">
+                <img src="Images\hande ercel.jpg" alt="actress image"
+                    class="ml-4 rounded-circle" style="width:250px;height:150px;">
+                <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam maxime animi
+                    accusantium in aspernatur nobis.</p>
+                <h6 class="text-center">Suryansh Tiwary</h6>
+                <p class="text-center text-capitalize text-secondary">web developer</p>
+            </div>
+            <div class="item shadow">
+                <img src="Images\hande ercel.jpg" alt="actress image"
+                    class="ml-4 rounded-circle" style="width:250px;height:150px;">
+                <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam maxime animi
+                    accusantium in aspernatur nobis.</p>
+                <h6 class="text-center">Suryansh Tiwary</h6>
+                <p class="text-center text-capitalize text-secondary">web developer</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- *****************************************************Contact Us form************************************ -->
+    <div class="formDiv" id="contact">
+        <h2 class="text-uppercase text-center mt-5" style="">Contact Us</h2>
+        <p class="text-capitalize text-center">We're here to help and answer any question you might have. We look
+            forward to hearing from you </p>
+        <div class="container mt-4 " style="margin-left:280px;width:750px;position:absolute;">
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter Your Name">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Enter email">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Mobile Number">
+                </div>
+                <div class="mb-3">
+                    <textarea name="" id="" class="form-control" cols="" rows="5"
+                        placeholder="Enter Your Message"></textarea>
+                </div>
+                <button type="submit " class="btn btn-outline-primary "
+                    style="margin-left:300px;border-radius:50px;width:100px;">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- *****************************************************Contact Us form ends here************************************ -->
+    <!-- *****************************************************Footer starts here************************************ -->
+    <div style="margin-top:550px;">
+        <h4 class="text-uppercase text-center mt-5 mb-5">subscribe to our newsletter</h4>
+        <div class="row  container mb-5 " style="margin-top:50px;margin-left:100px;height:30px;line-height:25px;">
+            <div class="col-sm-10 border" style="border-radius:20px 0 0 20px">Your Email</div>
+            <div class="col-sm-2 bg-info text-white border " style="border-radius:0 20px 20px 0">Subscribe</div>
+        </div>
+
+        <div class="container-fluid bg-primary" >
+            <div class="row">
+                <div class="col-sm-4 text-white">
+                    <h6 class="text-uppercase text-left mx-5 mt-5 " style="text-shadow:0 15px 20px 10px black;">about
+                        tiwaryinfotech</h6>
+                    <p class="" style="margin-bottom:110px;margin-left:50px;">The world has become so fast paced that
+                        people don't want to stand by reading a page of information to be they would much rather look at
+                        a presentation and understand the message.</p>
+                </div>
+
+                <div class="col-sm-4 text-white">
+                    <h6 class="text-uppercase text-left mx-5 mt-5 " style="text-shadow:5px 5px 5px 10px black;">
+                        navigation links</h6>
+
+                    <ul class="" style="list-style-type:none;margin-left:90px;">
+                        <li>Home</li>
+                        <li>Services</li>
+                        <li>Price</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 text-white">
+                    <h6 class="text-uppercase text-left mr-5 ml-3 mt-5 " style="text-shadow:5px 5px 5px 10px black;">
+                        newsletter</h6>
+                    <p>For business professionals caught between high OEM price and mediocre print and graphic output.
+                    </p>
+                    <div type="text"
+                        style="outline:none;border:none;border-radius:20px;width:350px;height:40px;background-image:linear-gradient(to right,#fff 50%,#40c4ff 50%)">
+                        <span style="color:gray;margin-left:10px;line-height:40px;">Your Email</span><span
+                            style="margin-left:100px;">Subscribe</span>
+                    </div>
+
+
+                </div>
+                <div class=" text-white mb-5" style="margin-top:50px;margin-left:350px;">Copyright<i>&copy</i>2019 All
+                    rights reserved| This template is made with love by TiwaryJI</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="Supporting files/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="Supporting files/owl.carousel.js"></script>
+
+    <script>
+        console.log("We have entered in scroll event")
+        var a=document.querySelector(".arrowTop");
+        document.addEventListener('scroll',()=>
+        {
+            console.log(`Window.scrollY is ${window.scrollY}`);
+            if(window.scrollY>20)
+            {
+                a.style.display="flex";
+            }
+            else{
+                a.style.display="none";
+            }
+            
+        });
+
+        a.addEventListener("click",()=>{
+            window.scrollTo(0,0);
+        })
+        
+    </script>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+
+            $('.owl-carousel').owlCarousel({
+                item: 3,
+                margin: 40,
+                nav: true
+
+            })
+
+            // $('.counter').counterUp({
+            //     delay: 10,
+            //     time: 1000
+            // });
+
+        });
+
+
+    </script>
+</body>
+
+</html>
